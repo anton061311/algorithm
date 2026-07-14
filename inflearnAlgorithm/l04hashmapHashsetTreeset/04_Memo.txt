@@ -1,0 +1,40 @@
+[SECTION 05: HashMap, TreeSet(해쉬, 정렬 지원 Set]
+
+  1. 학급 회장(Hash) - 26.02.10 완료
+   key point:
+    - HashMap은 key와 value쌍으로 이루어 진다. 각각 자료형 지정 가능.
+    - getOrDefault( 인자1, 인자2 ): 값이 있다면 인자1 반환 없다면 두 번째 인자를 반환하는 메서드
+    - map.containsKey('A'): 변수 map에 A가 존재하면 true, 아니면 false를 반환하는 메서드.
+    - map.size(): key의 갯수를 알려주는 메서드
+    - map.remove('A'): A라는 key를 삭제하는 메서드
+
+  2. 아나그램(Hash) - 26.02.10 완료
+   key point:
+    - 굳이 두 문자열 모두 HashMap에 저장할 필요는 없음. 하나가 기준이 되면 됨.
+
+  3. 매출액의 종류 - 26.02.10 완료
+   key point:
+    - HashMap에서 remove 메서드와 put, get 메서드 잘 활용ㅇㅇ
+
+  4. 모든 아나그램 찾기 - 26.02.10 완료
+   key point:
+    - sliding window가 따로 없노ㅋㅋ
+
+  5. K번째 큰 수 (코드 훑어만 볼 것) - 26.02.10 완료
+   key point:
+    - Set은 중복 정리를 하는 자료구조
+    - 내림차순, 오름차순으로 정리를 하려면 Set 중에서 TreeSet을 사용하면 된다.
+    - 정렬이 필요한 Map을 만드려면 TreeMap이 있다. 이는 이진트리(Red Black)트리로, 무언가를 찾으려면 O(logN)임.
+      -> TreeSet은 기본적으로 오름차순 정렬이나,
+         Collections.reverseOrder() 하면 TreeSet을 내림차룬으로 정렬
+    - Tset.add()
+    - Tset.remove()
+    - Tset.size()
+    - Tset.first()
+    - Tset.last()
+
+
+[QUIZ]
+Q) HashMap에서 특정 키의 값을 가져오는데 키가 없을 때 기본값을 쓰고 싶음. 어떤 메소드를 사용할까?
+A) getOrDefault( , ) getOrDefault는 키가 없을 때 지정한 기본값을 반환해요. 카운팅 문제에서 0으로 초기화할 때 아주 유용하죠.
+

@@ -1,0 +1,56 @@
+package myself.l08advanceDFSBFS;
+
+import java.util.*;
+
+public class Main0811 {
+
+    static int[] dx = {1, 0, -1, 0};
+    static int[] dy = {0, 1, 0, -1};
+    static int[][] board = new int[8][8];
+    static int[][] dist = new int[8][8];
+    static Queue<int[]> queue = new LinkedList<>();
+
+    void bfs(int x, int y){
+        queue.offer(new int[]{x, y});
+
+        while(!queue.isEmpty()){
+
+            int[] current = queue.poll();
+
+            for(int i = 0; i < 4; i++){
+                int nx = current[0] + dx[i];
+                int ny = current[1] + dy[i];
+
+                if(nx >= 1 && nx <=7 && ny >= 1 && ny <= 7 && board[nx][ny] == 0){
+                    board[nx][ny] = 1;
+                    queue.offer(new int[]{nx, ny});
+                    dist[nx][ny] = dist[x][y] + 1;
+
+                }
+            }
+        }
+    }
+
+    public static void main (String[] args) {
+
+        Main0811 T = new Main0811();
+        Scanner sc = new Scanner(System.in);
+
+        for (int i = 1; i < 8; i++) {
+            for (int j = 1; j < 8; j++) {
+                board[i][j] = sc.nextInt();
+            }
+        }
+
+        board[1][1] = 1;
+        T.bfs(1,1);
+
+        if(dist[7][7] == 0){
+            System.out.println(-1);
+        }
+        else {
+            System.out.println(dist[7][7]);
+        }
+
+    }
+}

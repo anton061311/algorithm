@@ -1,0 +1,63 @@
+[Section 08: Recursive, Tree, Graph(DFS, BFS 기초)]
+
+
+[목차]
+  1. 재귀함수(스택프레임) - 26.02.12 완
+   key point:
+        * - 재귀함수는 StackFrame을 사용한다.
+
+  2. 이진수 출력(재귀) - 26.02.12 완
+   key point:
+        * - 대부분의 재귀는 if, else 문으로 완성됨
+
+  3. 팩토리얼 - 26.02.12 완, N * DFS(N-1);
+   key point:
+
+  [면접] 4. 피보나치 재귀(메모리제이션) - 26.02.12 완
+   key point: 조금 치는 사람들은 static int[] fibo를 한다는데
+   메모리 상으로는 재귀가 비효율적이나 대기업에서 면접 시 나올 수 있음.
+
+  5. 이진트리순회*DFS: Depth-First Search) - 26.02.12 완
+   key point: tree는 그냥 중요함
+
+  6. 부분집합 구하기(DFS) - 26.02.12, 눈으로 코드 한번 따라가 보면 좋을 듯
+   key point:
+        * - static 영역에 접근하려면 static 변수만이 static 영역에 접근 가능
+
+  [RE]7. 이진트리 레벨탐색(BFS: Breadth-First Search) - 26.02.12, 굳
+   key point:
+        * - 쉽게 얘기해서 root에서 x번 만에 가는 노드들 부터 쭉 탐색
+
+  [RE]8. 송아지 찾기1(BFS) - 26.02.12, 7번과 비슷하나 이제 좀 문제 같음
+   key point:
+
+  9. Tree 말단노드까지의 가장 짧은 경로(DFS) - 26.02.13 완
+   key point:
+
+  10. Tree 말단노드까지의 가장 짧은 경로(BFS) - 26.02.13 완
+   key point:
+
+  11. 그래프와 인접행렬 - 26.02.13 완 (설명영상)
+   key point:
+
+  12. 경로탐색(DFS) - 26.02.13 완
+   key point:
+        - 볼 일 다 보면 이전 노드로 돌아감. 이것을 Back tracking이라고 함
+
+  [RE] 13. 경로탐색(인접리스트, ArrayList) - 26.02.13, 다시 볼 것
+   key point:
+        - 인접행렬은 비효율적임. 예컨데 10,000 x 10,000 행렬일 경우 10,000번을 돌아야 함.
+        - ArrayList를 저장할 수 있는 ArrayList
+
+  [RE] 14. 그래프 최단거리(BFS) - 26.02.13, 다시 볼 것
+   key point:
+
+[다시 풀어볼 문항]
+- 1
+- 2
+- 3
+- 4
+- 5
+- 6
+- 7
+- 8
